@@ -69,7 +69,3 @@ Parallelization – Run tests across multiple browsers and mobile viewport
 Flake Handling – Automatic retries with trace and screenshot capture for intermittent failures.
 
 Environment Management – Support multiple environments (dev, staging, production) with separate configs.
-
-
-
-
