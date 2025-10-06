@@ -1,18 +1,13 @@
 # BrightHR Playwright Test Automation
 
-## Overview
+1- Overview
 This repository contains **end-to-end automated tests** for the BrightHR sandbox application, implemented using **Playwright** and the **Page Object Model (POM)**.  
 The solution is **CI/CD-ready** via GitHub Actions, including authentication state management, headless browser. 
-
 The tests cover:
-
 - Saved Auth State using provided username and password.
 - Employee hub workflows (adding employees, validating they have been added to the employee hub)
-- Form validations and success messages
-
----
-
-## Project Structure
+- Form validations and success message
+2-Project Structure
 Helpers/ # Reusable helpers (employee data, login credentials)
 ├── Scripts/ # Utility scripts (save authentication state)
 ├── page-objects/ # Page Object Models (AddEmployeeButton)
@@ -25,41 +20,38 @@ Helpers/ # Reusable helpers (employee data, login credentials)
 
 
 
----
-
-## Page Object Model (POM) Hierarchy
 
 
 
-### **AddEmployeeButton**
+
+3-Page Object Model (POM) Hierarchy
+
+AddEmployeeButton
 - Handles employee hub workflows.
 - Methods:
   - `visit()` – Navigate to employee hub and open “Add Employee” modal
   - `addFirstEmployee()` – Fill details and save the first employee
   - `addSecondEmployee()` – Fill details and save the second employee
 
-### **Helpers**
+4- Helpers
 - `EmployeeInfo.js` – Stores reusable employee test data
 - `LoginDetails.js` – Loads credentials from environment variables or secrets
 
----
-
-## Authentication
+5- Authentication
 - **Local:** `.env` file containing:
 - BRIGHTHR_USERNAME=your_username
 BRIGHTHR_PASSWORD=your_password
 
 
-CI/CD (GitHub Actions)
+6- CI/CD (GitHub Actions)
 
 Headless browser execution
 
 Secrets used for authentication
-
 Generates auth.json automatically
 
 
-Production-Ready Automation Ideas
+7-Production-Ready Automation Ideas
 
 
 Parallelization – Run tests across multiple browsers and mobile viewport
