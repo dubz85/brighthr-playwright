@@ -7,6 +7,9 @@ The tests cover:
 - Saved Auth State using provided username and password.
 - Employee hub workflows (adding employees, validating they have been added to the employee hub)
 - Form validations and success message
+
+
+
 2-Project Structure
 Helpers/ # Reusable helpers (employee data, login credentials)
 ├── Scripts/ # Utility scripts (save authentication state)
@@ -17,10 +20,6 @@ Helpers/ # Reusable helpers (employee data, login credentials)
 ├── package.json # Dependencies and scripts
 ├── package-lock.json
 └── .gitignore
-
-
-
-
 
 
 
