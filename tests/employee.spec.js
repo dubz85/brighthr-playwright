@@ -6,7 +6,7 @@ import {
 } from "../Helpers/EmployeeInfo.js";
 
 //click on add employee button
-test.only("Add employee", async ({ page }) => {
+test("Add employee", async ({ page }) => {
   const addEmployeeButton = new AddEmployeeButton(page);
   await addEmployeeButton.visit();
 

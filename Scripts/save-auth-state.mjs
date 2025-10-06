@@ -12,8 +12,9 @@ import { chromium } from "playwright";
   await page.fill("#password", process.env.BRIGHTHR_PASSWORD);
   await page.click("button[type='submit']");
 
-  // Wait for dashboard page
-  await page.waitForURL(/sandbox-app\.brighthr\.com\/dashboard/);
+  await page.waitForURL(/sandbox-app\.brighthr\.com\/login/);
+
+  //(/sandbox-app\.brighthr\.com\/dashboard/);
 
   await context.storageState({ path: "auth.json" });
   await browser.close();
