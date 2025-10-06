@@ -28,7 +28,8 @@ jobs:
         run: node ./Scripts/save-auth-state.mjs
 
       - name: Run Playwright tests
-        run: npx playwright test --storage-state=auth.json --reporter=list
+        run: npx playwright test --reporter=list
+
 
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
